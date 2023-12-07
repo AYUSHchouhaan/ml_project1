@@ -7,7 +7,7 @@ def error_message_detail(error,error_detail:sys):
      file_name,exc_tb.tb_lineno,str(error))
 
     return error_message
-
+z
     
 
 class CustomException(Exception):
@@ -19,4 +19,8 @@ class CustomException(Exception):
         return self.error_message
     
 
-
+# try :
+#     divide =1/0
+# except Exception as e:
+#     raise CustomException(e,sys)
+#     logging.warning('divide by zero')
